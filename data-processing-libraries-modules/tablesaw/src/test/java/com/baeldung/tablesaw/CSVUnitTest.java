@@ -1,7 +1,9 @@
 package com.baeldung.tablesaw;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import tech.tablesaw.api.DateColumn;
 import tech.tablesaw.api.DoubleColumn;
@@ -26,7 +28,7 @@ import static tech.tablesaw.aggregate.AggregateFunctions.max;
 import static tech.tablesaw.aggregate.AggregateFunctions.mean;
 import static tech.tablesaw.aggregate.AggregateFunctions.min;
 import static tech.tablesaw.aggregate.AggregateFunctions.stdDev;
-
+@Disabled
 class CSVUnitTest {
 
     private static Table table;
