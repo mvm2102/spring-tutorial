@@ -326,7 +326,6 @@
                             </excludes>
                         </configuration>
                     </plugin>
-
                 </plugins>
             </build>
 
@@ -367,6 +366,11 @@
                 <module>video-tutorials</module>
             </modules>
 
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+            </properties>
+
         </profile>
 
 
@@ -374,7 +378,6 @@
             <id>default-heavy</id>
             <build>
                 <plugins>
-
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
@@ -396,7 +399,6 @@
                             </excludes>
                         </configuration>
                     </plugin>
-
                 </plugins>
             </build>
 
@@ -421,12 +423,12 @@
 
         <profile>
             <id>integration-jdk8</id>
-
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <excludes>
                                 <exclude>**/*ManualTest.java</exclude>
@@ -477,16 +479,21 @@
                 <module>video-tutorials</module>
             </modules>
 
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+            </properties>
+
         </profile>
 
         <profile>
             <id>integration-heavy</id>
-
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <excludes>
                                 <exclude>**/*ManualTest.java</exclude>
@@ -522,12 +529,12 @@
 
         <profile>
             <id>default</id>
-
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <forkCount>3</forkCount>
                             <reuseForks>true</reuseForks>
@@ -780,12 +787,12 @@
 
         <profile>
             <id>integration</id>
-
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <excludes>
                                 <exclude>**/*ManualTest.java</exclude>
@@ -1074,7 +1081,7 @@
         <logback.version>1.5.3</logback.version>
 
         <!-- plugins -->
-        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
         <exec-maven-plugin.version>3.2.0</exec-maven-plugin.version>
         <java.version>8</java.version>
