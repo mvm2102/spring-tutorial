@@ -2,12 +2,8 @@ package com.baeldung.java.io.pojotocsv;
 
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.exceptions.CsvRequiredFieldEmptyException;
-import com.opencsv.ICSVWriter;
 import com.opencsv.bean.BeanField;
-import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvBindByName;
-import com.opencsv.bean.StatefulBeanToCsv;
-import com.opencsv.bean.StatefulBeanToCsvBuilder;
 
 public class CustomColumnPositionStrategy<T> extends ColumnPositionMappingStrategy<T> {
     @Override
