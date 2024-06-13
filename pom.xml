@@ -574,7 +574,6 @@
                 <module>apache-poi-3</module>
                 <module>apache-poi</module>
                 <module>apache-thrift</module>
-                <module>apache-velocity</module>
                 <module>atomix</module>
                 <module>aws-modules</module>
                 <module>azure</module>
@@ -591,6 +590,7 @@
                 <module>drools</module>
                 <module>dubbo</module>
                 <module>feign</module>
+                <module>frontend-modules</module>
                 <module>gcp-firebase</module>
                 <module>geotools</module>
                 <module>google-auto-project</module>
@@ -666,7 +666,6 @@
                 <module>messaging-modules</module>
                 <module>metrics</module>
                 <module>microservices-modules</module>
-                <module>mustache</module>
                 <module>mybatis</module>
                 <module>netflix-modules</module>
                 <module>optaplanner</module>
@@ -761,11 +760,9 @@
                 <module>testing-modules/mockito-simple</module>
                 <module>text-processing-libraries-modules</module>
                 <module>timefold-solver</module>
-                <module>vaadin</module>
                 <module>vavr-modules</module>
                 <module>vertx-modules</module>
                 <module>web-modules</module>
-                <module>webrtc</module>
                 <module>xml-2</module>
                 <module>xml</module>
                 <module>xstream</module>
@@ -826,7 +823,6 @@
                 <module>apache-poi-3</module>
                 <module>apache-poi</module>
                 <module>apache-thrift</module>
-                <module>apache-velocity</module>
                 <module>atomix</module>
                 <module>aws-modules</module>
                 <module>azure</module>
@@ -843,6 +839,7 @@
                 <module>drools</module>
                 <module>dubbo</module>
                 <module>feign</module>
+                <module>frontend-modules</module>
                 <module>gcp-firebase</module>
                 <module>geotools</module>
                 <module>google-auto-project</module>
@@ -916,7 +913,6 @@
                 <module>messaging-modules</module>
                 <module>metrics</module>
                 <module>microservices-modules</module>
-                <module>mustache</module>
                 <module>mybatis</module>
                 <module>netflix-modules</module>
                 <module>optaplanner</module>
@@ -1011,11 +1007,9 @@
                 <module>testing-modules/mockito-simple</module>
                 <module>text-processing-libraries-modules</module>
                 <module>timefold-solver</module>
-                <module>vaadin</module>
                 <module>vavr-modules</module>
                 <module>vertx-modules</module>
                 <module>web-modules</module>
-                <module>webrtc</module>
                 <module>xml-2</module>
                 <module>xml</module>
                 <module>xstream</module>
