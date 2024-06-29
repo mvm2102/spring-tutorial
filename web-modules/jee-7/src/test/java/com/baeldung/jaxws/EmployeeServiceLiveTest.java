@@ -3,6 +3,8 @@ package com.baeldung.jaxws;
 import static org.junit.Assert.assertEquals;
 
 import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.List;
 
@@ -50,8 +52,8 @@ public class EmployeeServiceLiveTest {
     @Before
     public void setUp() {
         try {
-            wsdlUrl = new URL(deploymentUrl, WSDL_PATH);
-        } catch (MalformedURLException e) {
+            wsdlUrl = new URI(deploymentUrl, WSDL_PATH).toURL();
+        } catch (MalformedURLException | URISyntaxException e) {
             e.printStackTrace();
         }
 
