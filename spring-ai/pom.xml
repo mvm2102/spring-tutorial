@@ -14,6 +14,12 @@
         <relativePath>../parent-boot-3</relativePath>
     </parent>
 
+    <properties>
+        <spring-boot.version>3.2.3</spring-boot.version>
+        <spring-ai-openai.version>0.7.1-SNAPSHOT</spring-ai-openai.version>
+        <spring-ai-mistral-ai.version>0.8.1</spring-ai-mistral-ai.version>
+    </properties>
+    
     <repositories>
         <repository>
             <id>spring-snapshots</id>
@@ -35,7 +41,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>3.2.3</version>
+                <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -50,12 +56,12 @@
         <dependency>
             <groupId>org.springframework.experimental.ai</groupId>
             <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-            <version>0.7.1-SNAPSHOT</version>
+            <version>${spring-ai-openai.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-mistral-ai-spring-boot-starter</artifactId>
-            <version>0.8.1</version>
+            <version>${spring-ai-mistral-ai.version}</version>
         </dependency>
     </dependencies>
 
