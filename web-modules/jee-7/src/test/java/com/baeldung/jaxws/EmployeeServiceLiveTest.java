@@ -52,8 +52,8 @@ public class EmployeeServiceLiveTest {
     @Before
     public void setUp() {
         try {
-            wsdlUrl = new URI(deploymentUrl, WSDL_PATH).toURL();
-        } catch (MalformedURLException | URISyntaxException e) {
+            wsdlUrl = new URL(deploymentUrl, WSDL_PATH);
+        } catch (MalformedURLException  e) {
             e.printStackTrace();
         }
 
