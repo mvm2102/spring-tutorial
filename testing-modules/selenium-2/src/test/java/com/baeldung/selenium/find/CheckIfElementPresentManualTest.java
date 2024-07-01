@@ -1,5 +1,8 @@
 package com.baeldung.selenium.find;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -7,9 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.List;
@@ -22,7 +22,7 @@ public class CheckIfElementPresentManualTest {
     private By element = By.cssSelector(".example");
     private static final Duration TIMEOUT = Duration.ofSeconds(10);
 
-    @BeforeClass
+    @BeforeEach
     public void init() {
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/inputs");
@@ -40,7 +40,7 @@ public class CheckIfElementPresentManualTest {
         assertTrue(isElementPresentCheckByHandleException(element), "element is not present");
     }
 
-    @AfterClass
+    @AfterEach
     public void tearDown() {
         driver.quit();
     }
